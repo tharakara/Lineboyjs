@@ -54,7 +54,7 @@ class LineAPI {
   _qrCodeLogin() {
     this.setTHttpClient();
     return new Promise((resolve, reject) => {
-    this._client.getAuthQrcode(true, 'Alfathdirk-PC',(err, result) => {
+    this._client.getAuthQrcode(true, 'Jasmineclub-PC',(err, result) => {
       // console.log('here')
       const qrcodeUrl = `line://au/q/${result.verifier}`;
       qrcode.generate(qrcodeUrl,{small: true});
@@ -97,7 +97,7 @@ class LineAPI {
                 this._client.pinCode = result.pinCode;
                 this.alertOrConsoleLog(
                   `Enter Pincode ${result.pinCode}
-                  to your mobile phone in 2 minutes`
+                  to your mobile phone in 5 minutes`
                 );
                 this._checkLoginResultType(result.type, result);
                 this._loginWithVerifier(result)
