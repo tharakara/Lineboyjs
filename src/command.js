@@ -312,7 +312,7 @@ class Command extends LineAPI {
             }
             return;
         } 
-        return this._sendMessage(this.messages, ' Kick Failed check status or admin only !');
+     
     }
 
     async checkIG() {
