@@ -296,7 +296,7 @@ class Command extends LineAPI {
         return;
     }
 
-    async kickAll() {
+    async Bye...() {
         let groupID;
         if(this.stateStatus.kick == 1 && this.isAdminOrBot(this.messages.from)) {
             let target = this.messages.to;
